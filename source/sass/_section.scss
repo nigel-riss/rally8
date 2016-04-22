@@ -1,20 +1,103 @@
 .section {
+    // box model
+    padding: 80px 0;
+
+    // typography
+    font-size: 0;
+
+    &--rally-8-track {
+        // typography
+        color: #ffffff;
+        font-weight: 300;
+        font-style: italic;
+
+        // visual
+        background-image: url('../img/blue-print.png');
+
+        & .container {
+            // box model
+            // border: 1px solid #ffffff;
+            // width: 960px;
+            box-sizing: border-box;
+            padding: 60px;
+
+            // visual
+            box-shadow: inset 0 0 0 1px #ffffff;
+        }
+    }
+
+    &--models-promo {
+        // box model
+        padding-bottom: 500px;
+
+        // visual
+        background-image: url('../img/automodels-back.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
     &__caption {
         // postioning
         position: relative;
+        z-index: 0;
 
         // box model
         display: inline-block;
-        padding: 10px;
+        padding: 0 50px;
+        margin: 0;
+        margin-bottom: 40px;
+        // margin-left: -40px;
 
         // typography
         color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 50px;
 
-        @include captionBackground;
+        @include captionBackground(50px);
     }
 
     &__description {
         // box model
         display: inline-block;
+    }
+
+    &__text {
+        // typography
+        font-size: 16px;
+    }
+
+    &__table {
+        // typography
+        font-size: 16px;
+
+        & td {
+            // box model
+            border: 1px solid #ffffff;
+            padding: 5px;
+        }
+    }
+
+    &__list {
+        // box model
+        padding: 0;
+        margin: 0;
+
+        // typography
+        font-size: 18px;
+
+        // visual
+        list-style: none;
+
+        & li {
+            // typography
+            line-height: 1.666;
+            // line-height: 26px;
+
+            &:before {
+                content: '— ';
+            }
+        }
     }
 }

@@ -1,0 +1,8 @@
+.logo-n-address {
+    // box model
+    // border: 1px solid red;
+    @media (min-width: $tablet) {
+        padding-top: 30px;
+        height: 120px;
+    }
+}

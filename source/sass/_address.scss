@@ -1,0 +1,35 @@
+.address {
+    // box model
+    @media (min-width: $tablet) {
+        display: inline-block;
+        width: 67%;
+        vertical-align: top;
+    }
+
+    // typography
+    color: #ffffff;
+    text-align: right;
+
+    &__location {
+        // box model
+        padding: 0;
+        margin: 0;
+        padding-bottom: 10px;
+
+        // typography
+        @media (min-width: $tablet) {
+            font-size: 18px;
+        }
+    }
+
+    &__phones {
+        // box model
+        padding: 0;
+        margin: 0;
+
+        // typography
+        @media (min-width: $tablet) {
+            font-size: 22px;
+        }
+    }
+}

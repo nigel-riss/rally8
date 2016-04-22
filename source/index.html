@@ -11,13 +11,13 @@
     <div class="container">
       <div class="logo-n-address">
         <div class="logo">
-          
+          <img class="logo__image" src="img/logo.png" alt="">
         </div><!--  .logo -->
         <div class="address">
           <p class="address__location">
             Калининград, аэропорт «Девау», ул. Пригородная 4
           </p>
-          <p class="adress__phones">
+          <p class="address__phones">
             8(906)217-07-91, 8(962)251-18-49
           </p>
         </div><!--  .address -->
@@ -62,44 +62,52 @@
 
 
     <div class="hero">
-      <div class="hero__slide">
-        <h2 class="hero__caption">
-          Добро пожаловать в мир автомодельного спорта
-        </h2><!--  .hero__caption -->
-        <p class="hero__text">
-          Впервые в Калининграде! <br>
-          Открыта трасса международного уровня для заездов на радиоуправляемых автомоделях класса багги, трагги и ралли.<br>
-          Зрелищные гонки для всей семьи и профессиональных пилотов!
-        </p><!--  .hero__text -->
+      <div class="hero__slide  hero__slide--1">
+        <div class="container">
+          <h2 class="hero__caption">
+            Добро пожаловать в мир автомодельного спорта
+          </h2><!--  .hero__caption -->
+          <p class="hero__text">
+            Впервые в Калининграде! <br>
+            Открыта трасса международного уровня для заездов на радиоуправляемых автомоделях класса багги, трагги и ралли.<br>
+            Зрелищные гонки для всей семьи и профессиональных пилотов!
+          </p><!--  .hero__text -->
+        </div>
       </div><!--  .hero__slide -->
 
-      <div class="hero__slide">
-        <h2 class="hero__caption">
-          Продажа и прокат гоночного инвентаря
-        </h2><!--  .hero__caption -->
-        <p class="hero__text">
-          Бренды ведущих производителей<br>
-          Обширный ассортимент в наличии и под заказ<br>
-          Полный спектр технического обслуживания
-        </p><!--  .hero__text -->
+      <div class="hero__slide  hero__slide--2">
+        <div class="container">
+          <h2 class="hero__caption">
+            Продажа и прокат гоночного инвентаря
+          </h2><!--  .hero__caption -->
+          <p class="hero__text">
+            Бренды ведущих производителей<br>
+            Обширный ассортимент в наличии и под заказ<br>
+            Полный спектр технического обслуживания
+          </p><!--  .hero__text -->
+        </div>
       </div><!--  .hero__slide -->
 
-      <div class="hero__slide">
-        <h2 class="hero__caption">
-          Новый вид отдыха и развлечения
-        </h2><!--  .hero__caption -->
-        <p class="hero__text">
-          Автомобильный спорт является общедоступным развлечением для всей семьи, где царит здоровый дух соперничества.<br>
-          Для маломобильной группы населения созданы все условия для участия в заездах
-        </p><!--  .hero__text -->
+      <div class="hero__slide  hero__slide--3">
+        <div class="container">
+          <h2 class="hero__caption">
+            Новый вид отдыха и развлечения
+          </h2><!--  .hero__caption -->
+          <p class="hero__text">
+            Автомобильный спорт является общедоступным развлечением для всей семьи, где царит здоровый дух соперничества.<br>
+            Для маломобильной группы населения созданы все условия для участия в заездах
+          </p><!--  .hero__text -->
+        </div>
       </div><!--  .hero__slide -->
 
-      <div class="hero__slide">
-        <h2 class="hero__caption">
-          Школа дополнительного детского образования
-        </h2><!--  .hero__caption -->
-        <p class="hero__text">
-          Увлечение автомодельным спортом даёт детям:
+      <div class="hero__slide  hero__slide--4">
+        <div class="container">
+          <h2 class="hero__caption">
+            Школа дополнительного детского образования
+          </h2><!--  .hero__caption -->
+          <p class="hero__text">
+            Увлечение автомодельным спортом даёт детям:
+          </p><!--  .hero__text -->
           <ul class="hero__list">
             <li class="hero__item">
               знания в сфере робототехники
@@ -114,8 +122,9 @@
               воспитание спортивного духа и стремления к победе
             </li>
           </ul><!--  .hero__list -->
-        </p><!--  .hero__text -->
+        </div>
       </div><!--  .hero__slide -->
+
     </div><!--  .hero -->
   </header><!--  .main-header -->
 
@@ -124,7 +133,7 @@
   <section class="section  section--main-features">
     <div class="container">
       <article class="feature">
-        <header class="feature__header">
+        <header class="feature__header  feature__header--shop">
           <h3 class="feature__caption">
             Магазин
           </h3><!--  .feature__caption -->
@@ -144,7 +153,7 @@
       </article><!--  .feature -->
 
       <article class="feature">
-        <header class="feature__header">
+        <header class="feature__header  feature__header--amateur">
           <h3 class="feature__caption">
             Любительские заезды
           </h3><!--  .feature__caption -->
@@ -161,7 +170,7 @@
       </article><!--  .feature -->
 
       <article class="feature">
-        <header class="feature__header">
+        <header class="feature__header  feature__header--repair">
           <h3 class="feature__caption">
             Ремонт и сервис
           </h3><!--  .feature__caption -->
@@ -201,9 +210,9 @@
         Трасса соответствует стандартам международной федерации автомодельного спорта IFMAR.
       </p><!--  .section__text -->
 
-      <img class="track-image responsive-image" src="assets/img/rally8-track.svg" alt="Трасса Rally 8">
+      <img class="section__image" src="img/rally8-track.svg" alt="Трасса Rally 8">
 
-      <table class="">
+      <table class="section__table">
         <tbody>
           <tr>
             <td colspan="3">Длина, м</td>
@@ -245,21 +254,19 @@
         </p><!--  .section__description -->
       </header><!--  .section__header -->
 
-      <p class="section__text">
-        <ul>
-          <li>полноприводные модели масштаба 1:8 и 1:10 с двумя дифференциалами 4WD</li>
-          <li>модели класса «багги», «трагги» и «ралли»</li>
-          <li>модели призеров чемпионатов мира по автомодельному спорту</li>
-          <li>только проверенные модели лучших производителей</li>
-          <li>лично тестируем каждую модель</li>
-          <li>самые современные электрические и бензиновые моторы</li>
-          <li>системы масленых амортизаторов</li>
-          <li>влагозащитная электрика</li>
-          <li>огромный выбор запасных частей для тюнингра и ремонта</li>
-          <li>вы получаете полностью настроенный инвентарь</li>
-          <li>металлические элементы кузова и подвески</li>
-        </ul>
-      </p><!--  .section__text -->
+      <ul class="section__list">
+        <li>полноприводные модели масштаба 1:8 и 1:10 с двумя дифференциалами 4WD</li>
+        <li>модели класса «багги», «трагги» и «ралли»</li>
+        <li>модели призеров чемпионатов мира по автомодельному спорту</li>
+        <li>только проверенные модели лучших производителей</li>
+        <li>лично тестируем каждую модель</li>
+        <li>самые современные электрические и бензиновые моторы</li>
+        <li>системы масленых амортизаторов</li>
+        <li>влагозащитная электрика</li>
+        <li>огромный выбор запасных частей для тюнингра и ремонта</li>
+        <li>вы получаете полностью настроенный инвентарь</li>
+        <li>металлические элементы кузова и подвески</li>
+      </ul>
     </div>
   </section><!--  .models-promo -->
 
@@ -267,54 +274,57 @@
 
   <footer class="main-footer">
     <div class="container">
-      <div class="footer-logo">
-        
-      </div><!--  .footer-logo -->
+
+      <div class="footer-logo-n-nav">
+        <div class="footer-logo">
+          <img class="footer-logo__image" src="img/logo-footer.png" alt="">
+        </div><!--  .footer-logo -->
 
 
-      <nav class="footer-nav">
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">
-              главная
-            </a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">
-              трасса
-            </a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">
-              прокат
-            </a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">
-              магазин
-            </a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">
-              история
-            </a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="">
-              контакты
-            </a>
-          </li>
-        </ul><!--  .footer-nav__list -->
-      </nav><!--  .footer-nav -->
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                главная
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                трасса
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                прокат
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                магазин
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                история
+              </a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="">
+                контакты
+              </a>
+            </li>
+          </ul><!--  .footer-nav__list -->
+        </nav><!--  .footer-nav -->
+      </div>
 
       <div class="footer-address">
-          <p class="footer-address__location">
-            Калининград, аэропорт «Девау», ул. Пригородная 4
-          </p>
-          <p class="footer-address__phones">
-            8(906)217-07-91 — Виктор, 8(962)251-18-49 — Михаил
-          </p>
-        </div><!--  .address -->
+        <p class="footer-address__location">
+          Калининград, аэропорт «Девау», ул. Пригородная 4
+        </p>
+        <p class="footer-address__phones">
+          8(906)217-07-91 — Виктор, 8(962)251-18-49 — Михаил
+        </p>
+      </div><!--  .address -->
     </div>
   </footer><!--  .main-footer -->
 </body>

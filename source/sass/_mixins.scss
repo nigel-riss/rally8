@@ -1,20 +1,20 @@
-@mixin captionBackground {
+@mixin captionBackground($height: 30px, $top: 0, $left: 0, $opacity:.82) {
     &:before {
         content: '';
 
         // positioning
         position: absolute;
-        top: 0;
-        left: 0;
+        top: $top;
+        left: $left;
         z-index: -1;
 
         // box model
         display: block;
-        height: 100%;
+        height: $height;
         width: 100%;
 
         // visual 
-        background-color: rgba(0, 0, 0, .87);
+        background-color: rgba(33, 33, 33, $opacity);
         transform: skewX(-15deg);
     }
 }

@@ -1,0 +1,8 @@
+.logo {
+    // box model
+    @media (min-width: $tablet) {
+        display: inline-block;
+        width: 33%;
+        vertical-align: top;
+    }
+}

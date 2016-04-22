@@ -1,0 +1,33 @@
+.footer-address {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    // border: 1px solid red;
+    width: 50%;
+
+    // typography
+    text-align: right;
+
+    &__location {
+        // box model
+        position: 0;
+        margin: 0;
+        padding-bottom: 5px;
+
+        // typography
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    &__phones {
+        // box model
+        position: 0;
+        margin: 0;
+
+        // typography
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+    }
+}
