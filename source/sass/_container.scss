@@ -1,0 +1,7 @@
+.container {
+    // box model
+    margin: 0 auto;
+    @media (min-width: $desktop) {
+        width: 1000px;
+    }
+}

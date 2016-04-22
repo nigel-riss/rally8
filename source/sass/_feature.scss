@@ -1,0 +1,9 @@
+.feature {
+    // box model
+
+    &__caption {
+        position: relative;
+
+        @include captionBackground;
+    }
+}
