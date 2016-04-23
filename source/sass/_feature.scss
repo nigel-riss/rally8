@@ -1,4 +1,7 @@
 .feature {
+    // positioning
+    position: relative;
+
     // box model
     display: inline-block;
     vertical-align: top;
@@ -60,6 +63,7 @@
     &__body {
         // box model
         padding: 30px 20px;
+        height: 350px;
     }
 
     &__text {
@@ -71,5 +75,42 @@
         // typography
         font-size: 16px;
         font-weight: 300;
+    }
+
+    &__button {
+        // positioning
+        position: absolute;
+        top: 480px;
+        right: 40px;
+        z-index: 2;
+
+        // box model
+        display: inline-block;
+        padding: 0 20px;
+
+        // typography
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 40px;
+        text-decoration: none;
+
+        @include captionBackground(40px);
+        &:before {
+            background-color: red;
+        }
+
+        &:hover {
+            // padding-top: -2px;
+            padding-bottom: 3px;
+            // padding-left: -18px;
+            // padding-right: 22px;
+            line-height: 37px;
+        }
+
+        &:hover:before {
+            top: -3px;
+            left: -3px;
+            box-shadow: 3px 3px 0 0 #212121;
+        }
     }
 }

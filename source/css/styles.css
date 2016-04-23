@@ -569,6 +569,17 @@ body {
     background-color: rgba(33, 33, 33, .82);
     transform: skewX(-15deg);
 }
+.main-nav__list:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -37px;
+    display: block;
+    height: 40px;
+    width: 30px;
+    background-image: linear-gradient(to right, rgba(33, 33, 33, .82) 0%, rgba(33, 33, 33, .82) 40%, transparent 40%, transparent 60%, rgba(33, 33, 33, .82) 60%, rgba(33, 33, 33, .82) 100%);
+    transform: skewX(-15deg);
+}
 .main-nav__item {
     margin: 0;
     padding: 0;
@@ -580,6 +591,7 @@ body {
     }
 }
 .main-nav__link {
+    position: relative;
     display: inline-block;
     margin: 0;
     padding: 0 15px;
@@ -589,8 +601,37 @@ body {
     line-height: 40px;
     text-decoration: none;
 }
-.main-nav__link--first {
-    padding-left: 100px;
+.main-nav__link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(33, 33, 33, .82);
+    transform: skewX(-15deg);
+}
+.main-nav__link:before {
+    width: 0;
+}
+.main-nav__link:hover {
+    color: #212121;
+}
+.main-nav__link:hover:before {
+    width: 100%;
+    transition: all .2s linear;
+    background-color: #ffffff;
+}
+.main-nav__link--active {
+    box-shadow: inset 0 -2px 0 0 #ffffff;
+}
+.main-nav__link--active:hover {
+    color: #ffffff;
+}
+.main-nav__link--active:hover:before {
+    display: none;
 }
 
 @media (min-width: 1000px) {
@@ -656,6 +697,7 @@ body {
 }
 
 .feature {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     height: 500px;
@@ -707,6 +749,7 @@ body {
 }
 .feature__body {
     padding: 30px 20px;
+    height: 350px;
 }
 .feature__text {
     padding: 0;
@@ -714,6 +757,42 @@ body {
     padding-bottom: 20px;
     font-size: 16px;
     font-weight: 300;
+}
+.feature__button {
+    position: absolute;
+    top: 480px;
+    right: 40px;
+    z-index: 2;
+    display: inline-block;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+}
+.feature__button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(33, 33, 33, .82);
+    transform: skewX(-15deg);
+}
+.feature__button:before {
+    background-color: red;
+}
+.feature__button:hover {
+    padding-bottom: 3px;
+    line-height: 37px;
+}
+.feature__button:hover:before {
+    top: -3px;
+    left: -3px;
+    box-shadow: 3px 3px 0 0 #212121;
 }
 
 .main-footer {
