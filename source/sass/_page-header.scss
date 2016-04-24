@@ -1,0 +1,12 @@
+.page-header {
+    // typography
+    font-size: 0;
+
+    // visual
+    background-color: #b29460;
+
+    &--about {
+        background-image: url('../img/header-back-about.jpg');
+        background-position: center bottom;
+    }
+}

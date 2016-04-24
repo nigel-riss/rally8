@@ -397,6 +397,10 @@ th {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 0;
     min-width: 320px;
@@ -429,10 +433,24 @@ body {
     box-shadow: inset 0 0 0 1px #ffffff;
 }
 .section--models-promo {
-    padding-bottom: 500px;
+    padding-bottom: 540px;
     background-image: url('../img/automodels-back.jpg');
     background-repeat: no-repeat;
     background-position: center top;
+}
+.section--place-view {
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+.section--place-view img {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 768px;
+}
+.section--map {
+    height: 600px;
+    padding: 0;
 }
 .section__caption {
     position: relative;
@@ -493,7 +511,7 @@ body {
 @media (min-width: 786px) {
     .logo-n-address {
         padding-top: 30px;
-        height: 120px;
+        height: 130px;
     }
 }
 
@@ -538,6 +556,8 @@ body {
 
 .main-nav {
     padding: 0;
+    padding-top: 4px;
+    padding-bottom: 6px;
 }
 @media (min-width: 786px) {
     .main-nav {
@@ -636,7 +656,7 @@ body {
 
 @media (min-width: 1000px) {
     .hero {
-        margin-top: -190px;
+        margin-top: -180px;
         height: 500px;
     }
 }
@@ -710,6 +730,8 @@ body {
 }
 .feature__header {
     height: 150px;
+    padding: 0;
+    margin: 0;
 }
 .feature__header--shop {
     background-image: url('../img/feature-shop.jpg');
@@ -748,6 +770,7 @@ body {
     transform: skewX(-15deg);
 }
 .feature__body {
+    box-sizing: border-box;
     padding: 30px 20px;
     height: 350px;
 }
@@ -758,10 +781,12 @@ body {
     font-size: 16px;
     font-weight: 300;
 }
+.feature__footer {
+    margin-top: -20px;
+    text-align: center;
+}
 .feature__button {
-    position: absolute;
-    top: 480px;
-    right: 40px;
+    position: relative;
     z-index: 2;
     display: inline-block;
     padding: 0 20px;
@@ -783,7 +808,7 @@ body {
     transform: skewX(-15deg);
 }
 .feature__button:before {
-    background-color: red;
+    background-color: #f24841;
 }
 .feature__button:hover {
     padding-bottom: 3px;
@@ -857,4 +882,13 @@ body {
     color: #ffffff;
     font-size: 13px;
     font-weight: 300;
+}
+
+.page-header {
+    font-size: 0;
+    background-color: #b29460;
+}
+.page-header--about {
+    background-image: url('../img/header-back-about.jpg');
+    background-position: center bottom;
 }

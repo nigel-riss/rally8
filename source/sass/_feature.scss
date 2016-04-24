@@ -19,6 +19,8 @@
     &__header {
         // box model
         height: 150px;
+        padding: 0;
+        margin: 0;
 
         &--shop {
             // visual
@@ -62,8 +64,10 @@
 
     &__body {
         // box model
+        box-sizing: border-box;
         padding: 30px 20px;
         height: 350px;
+        // border: 1px solid red;
     }
 
     &__text {
@@ -77,11 +81,20 @@
         font-weight: 300;
     }
 
+    &__footer {
+        // box model
+        // border: 1px solid red;
+        margin-top: -20px;
+
+        // typography
+        text-align: center;
+    }
+
     &__button {
         // positioning
-        position: absolute;
-        top: 480px;
-        right: 40px;
+        position: relative;
+        // top: 480px;
+        // right: 40px;
         z-index: 2;
 
         // box model
@@ -96,7 +109,7 @@
 
         @include captionBackground(40px);
         &:before {
-            background-color: red;
+            background-color: #f24841;
         }
 
         &:hover {

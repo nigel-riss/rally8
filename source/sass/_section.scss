@@ -28,12 +28,36 @@
 
     &--models-promo {
         // box model
-        padding-bottom: 500px;
+        padding-bottom: 540px;
 
         // visual
         background-image: url('../img/automodels-back.jpg');
         background-repeat: no-repeat;
         background-position: center top;
+    }
+
+    &--place-view {
+        // box model
+        padding: 0;
+
+        // typography
+        text-align: center;
+
+        // visual
+        overflow: hidden;
+
+        & img {
+            // box model
+            width: 100%;
+            max-width: 1920px;
+            min-width: 768px;
+        }
+    }
+
+    &--map {
+        // box model
+        height: 600px;
+        padding: 0;
     }
 
     &__caption {

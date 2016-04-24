@@ -3,6 +3,10 @@
 @import 'vars';
 @import 'fonts';
 
+* {
+    box-sizing: border-box;
+}
+
 @import 'body';
 @import 'container';
 @import 'section';
@@ -21,3 +25,5 @@
 @import 'footer-logo';
 @import 'footer-nav';
 @import 'footer-address';
+
+@import 'page-header';
