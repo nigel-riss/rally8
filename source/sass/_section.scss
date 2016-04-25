@@ -89,17 +89,23 @@
 
     &__text {
         // typography
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.6;
+
+        & strong {
+            font-weight: 400;
+        }
     }
 
     &__table {
         // typography
-        font-size: 16px;
+        font-size: 18px;
 
         & td {
             // box model
             border: 1px solid #ffffff;
-            padding: 5px;
+            padding: 5px 10px;
         }
     }
 
@@ -110,6 +116,7 @@
 
         // typography
         font-size: 18px;
+        font-weight: 300;
 
         // visual
         list-style: none;
@@ -123,5 +130,17 @@
                 content: '— ';
             }
         }
+
+        & strong {
+            // typography
+            font-weight: 400;
+        }
+    }
+
+    &__image {
+        // box model
+        width: 380px;
+        padding: 20px 0;
+        // margin: 40px;
     }
 }
