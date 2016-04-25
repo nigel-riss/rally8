@@ -24,6 +24,25 @@
             // visual
             box-shadow: inset 0 0 0 1px #ffffff;
         }
+
+        & .section__caption {
+            // box model
+            margin-left: -100px;
+            margin-bottom: 40px;
+
+            // typography
+            color: #2372d3;
+
+            &:before {
+                background-color: #ffffff;
+            }
+            &:after {
+                background-image: linear-gradient(to right, #ffffff 0%,
+                #ffffff 40%, transparent 40%, transparent 60%,
+                #ffffff 60%, #ffffff 100%);
+                transform: skewX(-15deg);
+            }
+        }
     }
 
     &--models-promo {
@@ -60,6 +79,11 @@
         padding: 0;
     }
 
+    &__header {
+        // box model
+        // padding-left: 20px;
+    }
+
     &__caption {
         // postioning
         position: relative;
@@ -69,7 +93,8 @@
         display: inline-block;
         padding: 0 50px;
         margin: 0;
-        margin-bottom: 40px;
+        margin-left: -50px;
+        // margin-bottom: 10px;
         // margin-left: -40px;
 
         // typography
@@ -80,11 +105,43 @@
         line-height: 50px;
 
         @include captionBackground(50px);
+
+        &:after {
+            content: '';
+
+            // positioning
+            position: absolute;
+            top: 0;
+            left: -37px;
+
+            // box model
+            display: block;
+            height: 50px;
+            width: 30px;
+
+            // visual
+            // background-color: #ffffff;
+            background-image: linear-gradient(to right, rgba(33, 33, 33, .82) 0%,
+            rgba(33, 33, 33, .82) 40%, transparent 40%, transparent 60%,
+            rgba(33, 33, 33, .82) 60%, rgba(33, 33, 33, .82) 100%);
+            transform: skewX(-15deg);
+        }
     }
 
     &__description {
         // box model
-        display: inline-block;
+        // display: inline-block;
+        // border: 1px solid red;
+        padding: 10px 0;
+        // padding-left: 50px;
+        margin: 0;
+        margin-bottom: 40px;
+
+        // typography
+        color: #666666;
+        font-size: 18px;
+        font-style: italic;
+        // font-weight: 300;
     }
 
     &__text {
