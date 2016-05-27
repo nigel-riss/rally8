@@ -1,13 +1,25 @@
 .main-nav {
+    // positioning
+    position: relative;
+    z-index: 2;
+
     // box model
     padding: 0;
     // border: 1px solid red;
-    padding-top: 4px;
-    padding-bottom: 6px;
+    @media (min-width: $tablet) {
+        padding-top: 4px;
+        padding-bottom: 6px;
+    }
 
     // typography
     @media (min-width: $tablet) {
         text-align: right;
+    }
+
+    // visual
+    overflow: hidden;
+    @media (min-width: $tablet) {
+        overflow: visible;
     }
 
     &__list {
@@ -16,9 +28,11 @@
         z-index: 0;
 
         // box model
+        height: 0;
         margin: 0;
         padding: 0;
         @media (min-width: $tablet) {
+            height: auto;
             display: inline-block;
             padding: 0 5px;
         }

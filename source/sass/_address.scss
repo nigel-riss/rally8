@@ -12,11 +12,16 @@
 
     &__location {
         // box model
-        padding: 0;
         margin: 0;
+        padding: 0;
         padding-bottom: 10px;
+        padding-top: 20px;
+        @media (min-width: $tablet) {
+            padding-top: 0;
+        }
 
         // typography
+        font-size: 14px;
         @media (min-width: $tablet) {
             font-size: 18px;
         }
@@ -28,6 +33,7 @@
         margin: 0;
 
         // typography
+        font-size: 14px;
         @media (min-width: $tablet) {
             font-size: 22px;
         }

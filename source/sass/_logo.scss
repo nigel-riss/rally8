@@ -1,8 +1,28 @@
 .logo {
     // box model
+    // border: 1px solid red;
+
     @media (min-width: $tablet) {
         display: inline-block;
         width: 33%;
         vertical-align: top;
+    }
+
+    &__image {
+        height: 42px;
+        @media (min-width: $tablet) {
+            height: auto;
+        }
+    }
+
+    &__menu-button {
+        // positioning
+        position: absolute;
+        right: 0;
+        top: 30px;
+
+        // visual
+        cursor: pointer;
+        opacity: .82;
     }
 }

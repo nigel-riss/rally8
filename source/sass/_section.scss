@@ -1,6 +1,14 @@
 .section {
     // box model
-    padding: 80px 0;
+    padding: 40px 0;
+
+    @media (min-width: $tablet) {
+        padding: 60px 0;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 80px 0;
+    }
 
     // typography
     font-size: 0;
@@ -19,16 +27,23 @@
             // border: 1px solid #ffffff;
             // width: 960px;
             box-sizing: border-box;
-            padding: 60px;
+            @media (min-width: $desktop) {
+                padding-top: 20px;
+                padding: 60px;
+            }
 
             // visual
-            box-shadow: inset 0 0 0 1px #ffffff;
+            @media (min-width: $desktop) {
+                box-shadow: inset 0 0 0 1px #ffffff;
+            }
         }
 
         & .section__caption {
             // box model
-            margin-left: -100px;
-            margin-bottom: 40px;
+            @media (min-width: $tablet) {
+                margin-left: -100px;
+                margin-bottom: 40px;
+            }
 
             // typography
             color: #2372d3;
@@ -43,16 +58,32 @@
                 transform: skewX(-15deg);
             }
         }
+
+        & .section__table {
+            display: none;
+
+            @media (min-width: $tablet) {
+                display: table;
+            }
+        }
     }
 
     &--models-promo {
         // box model
-        padding-bottom: 540px;
+        padding-bottom: 250px;
+        @media (min-width: $tablet) {
+            padding-bottom: 540px;
+        }
 
         // visual
         background-image: url('../img/automodels-back.jpg');
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center bottom;
+        background-size: 200%;
+        @media (min-width: $tablet) {
+            background-size: auto;
+            background-position: center top;
+        }
     }
 
     &--place-view {
@@ -91,40 +122,53 @@
 
         // box model
         display: inline-block;
-        padding: 0 50px;
         margin: 0;
-        margin-left: -50px;
+        padding: 0 20px;
+        @media (min-width: $tablet) {
+            padding: 0 50px;
+            margin-left: -50px;
+        }
         // margin-bottom: 10px;
         // margin-left: -40px;
 
         // typography
         color: #ffffff;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 400;
         font-style: normal;
-        line-height: 50px;
+        line-height: 30px;
+        @media (min-width: $tablet) {
+            font-size: 30px;
+            line-height: 50px;
+        }
 
-        @include captionBackground(50px);
+        @include captionBackground(30px);
 
-        &:after {
-            content: '';
+        @media (min-width: $tablet) {
+            @include captionBackground(50px);
+        }
 
-            // positioning
-            position: absolute;
-            top: 0;
-            left: -37px;
+        @media (min-width: $tablet) {
+            &:after {
+                content: '';
 
-            // box model
-            display: block;
-            height: 50px;
-            width: 30px;
+                // positioning
+                position: absolute;
+                top: 0;
+                left: -37px;
 
-            // visual
-            // background-color: #ffffff;
-            background-image: linear-gradient(to right, rgba(33, 33, 33, .82) 0%,
-            rgba(33, 33, 33, .82) 40%, transparent 40%, transparent 60%,
-            rgba(33, 33, 33, .82) 60%, rgba(33, 33, 33, .82) 100%);
-            transform: skewX(-15deg);
+                // box model
+                display: block;
+                height: 50px;
+                width: 30px;
+
+                // visual
+                // background-color: #ffffff;
+                background-image: linear-gradient(to right, rgba(33, 33, 33, .82) 0%,
+                rgba(33, 33, 33, .82) 40%, transparent 40%, transparent 60%,
+                rgba(33, 33, 33, .82) 60%, rgba(33, 33, 33, .82) 100%);
+                transform: skewX(-15deg);
+            }
         }
     }
 
@@ -139,16 +183,23 @@
 
         // typography
         color: #666666;
-        font-size: 18px;
+        font-size: 16px;
         font-style: italic;
         // font-weight: 300;
+        @media (min-width: $tablet) {
+            font-size: 18px;
+        }
     }
 
     &__text {
         // typography
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 300;
         line-height: 1.6;
+
+        @media (min-width: $tablet) {
+            font-size: 18px;
+        }
 
         & strong {
             font-weight: 400;
@@ -172,7 +223,11 @@
         margin: 0;
 
         // typography
-        font-size: 18px;
+        font-size: 16px;
+
+        @media (min-width: $tablet) {
+            font-size: 18px;
+        }
         font-weight: 300;
 
         // visual

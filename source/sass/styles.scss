@@ -27,3 +27,9 @@
 @import 'footer-address';
 
 @import 'page-header';
+
+.m_only {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
