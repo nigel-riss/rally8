@@ -1,14 +1,23 @@
 .main-nav {
     // positioning
-    position: relative;
+    position: absolute;
+    top: 82px;
     z-index: 2;
 
-    // box model
-    padding: 0;
-    // border: 1px solid red;
     @media (min-width: $tablet) {
-        padding-top: 4px;
+        position: relative;
+    }
+
+    // box model
+    display: none;
+    margin-left: -10px;
+    padding: 0;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+        display: block;
         padding-bottom: 6px;
+        padding-top: 4px;
     }
 
     // typography
@@ -17,53 +26,69 @@
     }
 
     // visual
+    background-color: #b29460;
     overflow: hidden;
     @media (min-width: $tablet) {
+        background-color: transparent;
         overflow: visible;
     }
 
+    //////////////////////
+    //.main-nav--display
+    //////////////////////
+    &--display {
+        display: block;
+    }
+
+    ///////////////////
+    //.main-nav__list
+    ///////////////////
     &__list {
         // positioning
         position: relative;
         z-index: 0;
 
         // box model
-        height: 0;
         margin: 0;
         padding: 0;
         @media (min-width: $tablet) {
-            height: auto;
             display: inline-block;
+            height: auto;
             padding: 0 5px;
         }
 
         // visual
         // background-color: rgba(33, 33, 33, .82);
         list-style: none;
-        @include captionBackground(40px);
+        @media (min-width: $tablet) {
+            @include captionBackground(40px);
 
-        &:after {
-            content: '';
+            &:after {
+                content: '';
 
-            // positioning
-            position: absolute;
-            top: 0;
-            left: -37px;
+                // positioning
+                position: absolute;
+                top: 0;
+                left: -37px;
 
-            // box model
-            display: block;
-            height: 40px;
-            width: 30px;
+                // box model
+                display: block;
+                height: 40px;
+                width: 30px;
 
-            // visual
-            // background-color: #ffffff;
-            background-image: linear-gradient(to right, rgba(33, 33, 33, .82) 0%,
-            rgba(33, 33, 33, .82) 40%, transparent 40%, transparent 60%,
-            rgba(33, 33, 33, .82) 60%, rgba(33, 33, 33, .82) 100%);
-            transform: skewX(-15deg);
+                // visual
+                // background-color: #ffffff;
+                background-image: linear-gradient(to right, rgba(33, 33, 33, .82) 0%,
+                rgba(33, 33, 33, .82) 40%, transparent 40%, transparent 60%,
+                rgba(33, 33, 33, .82) 60%, rgba(33, 33, 33, .82) 100%);
+                transform: skewX(-15deg);
+            }
         }
     }
 
+    ///////////////////
+    //.main-nav__item
+    ///////////////////
     &__item {
         // box model
         margin: 0;
@@ -74,15 +99,21 @@
         }
     }
 
+    ///////////////////
+    //.main-nav__link
+    ///////////////////
     &__link {
         // positioning
         position: relative;
 
         // box model
-        display: inline-block;
+        display: block;
         margin: 0;
         padding: 0 15px;
         // border: 1px solid red;
+        @media (min-width: $tablet) {
+            display: inline-block;
+        }
 
         // typography
         color: #ffffff;
@@ -91,7 +122,11 @@
         line-height: 40px;
         text-decoration: none;
 
-        @include captionBackground(40px);
+        // visual
+        @include captionBackground(40px, 0, -7px);
+        @media (min-width: $tablet) {
+            @include captionBackground(40px);
+        }
         &:before {
             width: 0;
         }
@@ -111,7 +146,11 @@
 
         &--active {
             // visual
-            box-shadow: inset 0 -2px 0 0 #ffffff;
+            background-color: rgba(33, 33, 33, .82);
+            @media (min-width: $tablet) {
+                box-shadow: inset 0 -2px 0 0 #ffffff;
+                background-color: transparent;
+            }
 
             &:hover {
                 // typography 

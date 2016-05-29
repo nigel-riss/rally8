@@ -1,12 +1,18 @@
 .footer-address {
     // box model
-    display: inline-block;
-    vertical-align: top;
+    padding-top: 20px;
     // border: 1px solid red;
-    width: 50%;
+    @media (min-width: $tablet) {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
 
     // typography
-    text-align: right;
+    text-align: left;
+    @media (min-width: $tablet) {
+        text-align: right;
+    }
 
     &__location {
         // box model

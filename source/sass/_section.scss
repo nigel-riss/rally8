@@ -13,11 +13,14 @@
     // typography
     font-size: 0;
 
+    ///////////////////////////
+    //.section--rally-8-track
+    ///////////////////////////
     &--rally-8-track {
         // typography
         color: #ffffff;
-        font-weight: 300;
         font-style: italic;
+        font-weight: 300;
 
         // visual
         background-image: url('../img/blue-print.png');
@@ -41,8 +44,8 @@
         & .section__caption {
             // box model
             @media (min-width: $tablet) {
-                margin-left: -100px;
                 margin-bottom: 40px;
+                margin-left: -100px;
             }
 
             // typography
@@ -68,6 +71,9 @@
         }
     }
 
+    //////////////////////////
+    //.section--models-promo
+    //////////////////////////
     &--models-promo {
         // box model
         padding-bottom: 250px;
@@ -77,12 +83,12 @@
 
         // visual
         background-image: url('../img/automodels-back.jpg');
-        background-repeat: no-repeat;
         background-position: center bottom;
+        background-repeat: no-repeat;
         background-size: 200%;
         @media (min-width: $tablet) {
-            background-size: auto;
             background-position: center top;
+            background-size: auto;
         }
     }
 
@@ -104,17 +110,26 @@
         }
     }
 
+    /////////////////
+    //.section--map
+    /////////////////
     &--map {
         // box model
         height: 600px;
         padding: 0;
     }
 
+    ////////////////////
+    //.section__header
+    ////////////////////
     &__header {
         // box model
         // padding-left: 20px;
     }
 
+    /////////////////////
+    //.section__caption
+    /////////////////////
     &__caption {
         // postioning
         position: relative;
@@ -134,8 +149,8 @@
         // typography
         color: #ffffff;
         font-size: 20px;
-        font-weight: 400;
         font-style: normal;
+        font-weight: 400;
         line-height: 30px;
         @media (min-width: $tablet) {
             font-size: 30px;
@@ -153,9 +168,9 @@
                 content: '';
 
                 // positioning
+                left: -37px;
                 position: absolute;
                 top: 0;
-                left: -37px;
 
                 // box model
                 display: block;
@@ -172,6 +187,9 @@
         }
     }
 
+    /////////////////////////
+    //.section__description
+    /////////////////////////
     &__description {
         // box model
         // display: inline-block;
@@ -191,6 +209,9 @@
         }
     }
 
+    //////////////////
+    //.section__text
+    //////////////////
     &__text {
         // typography
         font-size: 16px;
@@ -206,6 +227,9 @@
         }
     }
 
+    ///////////////////
+    //.section__table
+    ///////////////////
     &__table {
         // typography
         font-size: 18px;
@@ -217,6 +241,9 @@
         }
     }
 
+    //////////////////
+    //.section__list
+    //////////////////
     &__list {
         // box model
         padding: 0;
@@ -249,10 +276,17 @@
         }
     }
 
+    ///////////////////
+    //.section__image
+    ///////////////////
     &__image {
         // box model
-        width: 380px;
-        padding: 20px 0;
+        padding: 0;
+        width: 200px;
+        @media (min-width: $tablet) {
+            padding: 20px 0;
+            width: 380px;
+        }
         // margin: 40px;
     }
 }

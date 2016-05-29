@@ -1,17 +1,21 @@
 .footer-nav {
     // box model
-    display: inline-block;
-    vertical-align: bottom;
-
+    @media (min-width: $tablet) {
+        display: inline-block;
+        vertical-align: bottom;
+    }
     // typography
     font-size: 0;
+    text-align: right;
 
     &__list {
         // box model
-        display: inline-block;
-        vertical-align: top;
         padding: 0;
         margin: 0;
+        @media (min-width: $tablet) {
+            display: inline-block;
+            vertical-align: top;
+        }
     }
 
     &__item {
