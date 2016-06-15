@@ -416,6 +416,11 @@ body {
         width: 1000px;
     }
 }
+.container:after {
+    content: '';
+    display: table;
+    width: 100%;
+}
 
 .section {
     padding: 40px 0;
@@ -648,7 +653,7 @@ body {
     z-index: 0;
     display: inline-block;
     padding: 0 20px;
-    margin-top: 40px;
+    margin-top: 30px;
     color: #ffffff;
     font-size: 18px;
     line-height: 40px;
@@ -1183,6 +1188,92 @@ body {
     top: -3px;
     left: -3px;
     box-shadow: 3px 3px 0 0 #212121;
+}
+
+.shop-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 400px;
+    margin-bottom: 40px;
+}
+.shop-item__caption {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    margin: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.shop-item__caption:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    z-index: -1;
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(33, 33, 33, .82);
+    transform: skewX(-15deg);
+}
+.shop-item__header {
+    padding-left: 10px;
+    order: 1;
+    width: 50%;
+}
+.shop-item__description {
+    padding: 0 20px;
+    color: #666666;
+    font-size: 16px;
+    font-style: italic;
+}
+.shop-item__body {
+    height: 300px;
+    order: 2;
+    width: 50%;
+    padding-left: 30px;
+}
+.shop-item__short-text {
+    padding: 0;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.6;
+}
+.shop-item__image-container {
+    position: relative;
+    order: 0;
+    width: 50%;
+    overflow: hidden;
+}
+.shop-item__image {
+    position: relative;
+    top: -50px;
+    width: 100%;
+}
+.shop-item__price {
+    top: 270px;
+    right: 40px;
+    color: #f24841;
+    font-size: 30px;
+    font-weight: 100;
+}
+.shop-item:nth-of-type(2n) .shop-item__image-container {
+    order: 2;
+}
+.shop-item:nth-of-type(2n) .shop-item__header {
+    margin-left: -30px;
+    order: 0;
+}
+.shop-item:nth-of-type(2n) .shop-item__body {
+    margin-right: -20px;
+    padding-left: 0;
+    padding-right: 40px;
+    order: 1;
 }
 
 .main-footer {
