@@ -16,7 +16,7 @@
     }
 
     @media (min-width: $desktop) {
-        height: 480px;
+        height: 500px;
         // margin-right: 20px;
         display: inline-block;
         // width: 320px;
@@ -46,13 +46,13 @@
             }
         }
 
-        &--amateur {
+        &--racing {
             // visual
             background-image: linear-gradient(to right, transparent 0, transparent 180px, #ffffff 315px),
-            url('../img/feature-amateur.jpg');
+            url('../img/feature-racing.jpg');
 
             @media (min-width: $desktop) {
-                background-image: url('../img/feature-amateur.jpg');
+                background-image: url('../img/feature-racing.jpg');
             }
         }
 
@@ -64,6 +64,24 @@
             @media (min-width: $desktop) {
                 background-image: url('../img/feature-repair.jpg');
             }
+        }
+
+        &--scale-1-8 {
+            // visual
+            background-image: url('../img/feature-scale-1-8.jpg');
+            background-position: center 0;
+        }
+
+        &--scale-1-10 {
+            // visual
+            background-image: url('../img/feature-scale-1-10.jpg');
+            background-position: center 0;
+        }
+
+        &--scale-1-5 {
+            // visual
+            background-image: url('../img/feature-scale-1-5.jpg');
+            background-position: center 0;
         }
     }
 
@@ -89,16 +107,29 @@
 
         // visual
         @include captionBackground(40px);
+
+        &--shop {
+            // positioning
+            top: 60px;
+        }
     }
 
     &__body {
         // box model
         box-sizing: border-box;
         padding: 30px 20px;
+        @media (min-width: $tablet) {
+            height: 410px;
+        }
         @media (min-width: $desktop) {
             height: 350px;
         }
         // border: 1px solid red;
+
+        &--shop {
+            // box model
+            padding-top: 60px;
+        }
     }
 
     &__text {
@@ -124,9 +155,12 @@
     &__button {
         // positioning
         position: relative;
-        // top: 480px;
+        top: 20px;
         // right: 40px;
         z-index: 2;
+        @media (min-width: $tablet) {
+            top: 0;
+        }
 
         // box model
         display: inline-block;

@@ -1,6 +1,6 @@
 @import 'normalize';
-@import 'mixins';
 @import 'vars';
+@import 'mixins';
 @import 'fonts';
 
 * {
@@ -10,6 +10,7 @@
 @import 'body';
 @import 'container';
 @import 'section';
+@import 'button';
 
 @import 'main-header';
 @import 'logo-n-address';
@@ -32,4 +33,9 @@
     @media (min-width: $tablet) {
         display: none;
     }
+}
+
+a {
+    // typography
+    color: $linkColor;
 }

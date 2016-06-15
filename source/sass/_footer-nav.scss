@@ -35,5 +35,10 @@
         font-size: 12px;
         font-style: italic;
         text-decoration: none;
+
+        &--active {
+            // typography
+            text-decoration: underline;
+        }
     }
 }
