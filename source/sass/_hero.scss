@@ -80,11 +80,11 @@
         padding-top: 90px;
         @media (min-width: $tablet) {
             padding: 0;
-            padding-right: 40px;
+            padding-right: 50px;
             padding-top: 20px;
             margin: 0;
             margin-top: 20px;
-            width: 800px;
+            width: 700px;
         }
 
         // typography
@@ -101,7 +101,7 @@
 
         @media (min-width: $tablet) {
             background-color: transparent;
-            @include captionBackground(160px, 0, -50px, .42);
+            @include captionBackground(160px, 0, -40px, .42);
         }
     }
 }
